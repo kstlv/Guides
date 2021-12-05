@@ -1,6 +1,6 @@
 # Pocket Import Helper — Import URL list into Pocket
 
-This program will help you make a file ready for import into [Pocket](https://getpocket.com/) from your text file with links (URLs).
+**Pocket Import Helper** will help you make a file ready for import into [Pocket](https://getpocket.com/) from your text file with links (URLs).
 
 The reason for creating this tool: I have not found a solution to import a simple list of links into Pocket.
 
