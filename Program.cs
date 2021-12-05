@@ -8,8 +8,10 @@ namespace pocket_import_helper
     {
         private const string _fileImport = "links.txt";
         private const string _fileExport = "links.html";
+
         private const string _htmlStart = "<!DOCTYPE html>\n<html>\n<head>\n<meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\" />\n<title>Instapaper: Export</title>\n</head>\n<body>\n<h1>Unread</h1>\n<ol>\n";
         private const string _htmlEnd = "</ol>\n</body>\n</html>";
+
         private const string _tagStart = "<li><a href=\"";
         private const string _tagEnd = "\"></a>\n";
 
@@ -34,7 +36,7 @@ namespace pocket_import_helper
             Console.WriteLine("Please note that URLs must start with \"{0}\" or with \"{1}\". Each line is a separate URL.\n", _http, _https);
 
             Console.WriteLine("0. Exit");
-            Console.WriteLine("1. I have prepared the file ({0}), start.", _fileImport);
+            Console.WriteLine("1. I have prepared the file ({0}), start!", _fileImport);
 
             Console.Write("\nSelect an option: ");
 
@@ -84,9 +86,7 @@ namespace pocket_import_helper
                         }
                         Console.WriteLine("\nLinks (URLs)");
                         Console.WriteLine(new string('-', 12));
-                        Console.ForegroundColor = ConsoleColor.Green;
                         Console.WriteLine("Correct:   {0}", counterCorrect);
-                        Console.ForegroundColor = ConsoleColor.Red;
                         Console.WriteLine("Incorrect: {0}\n", counterIncorrect);
                         Console.ResetColor();
                     }
@@ -107,7 +107,9 @@ namespace pocket_import_helper
                     }
                     else
                     {
+                        Console.ForegroundColor = ConsoleColor.Red;
                         Console.WriteLine("No correct links (URLs) found in ({0}).", _fileImport);
+                        Console.ResetColor();
                     }
                 }
                 catch (Exception e)
