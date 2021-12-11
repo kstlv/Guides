@@ -32,7 +32,6 @@ void create_export_file() {
         string link;
         link = "";
         while (getline(file, link)) {
-            // start with https://thispointer.com/c-check-if-a-string-starts-with-an-another-given-string/
             if (!link.empty() && ((link.find(https) == 0) || (link.find(http) == 0))) {
                 links.append(tagStart + link + tagEnd);
                 counterCorrect++;
