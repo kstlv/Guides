@@ -14,7 +14,7 @@ The reason for creating this tool: I have not found a solution to import a simpl
 
 ## How to Build
 
-I have implemented this task in two programming languages (C++ and C#).
+I have implemented this task in two programming languages (C++ and C#). They work the same way. Each project is independent of the other's code.
 
 ### C++
 
