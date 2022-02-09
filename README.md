@@ -28,6 +28,10 @@ Path: `cs/pocket_import_helper`
 
 Compile using `Visual Studio Code` ([guide](https://code.visualstudio.com/docs/languages/dotnet)) or `Visual Studio` ([guide](https://docs.microsoft.com/en-us/visualstudio/get-started/csharp/tutorial-console?view=vs-2022)) or `JetBrains Rider`.
 
+## Task for the Future
+
+Improve C++ code making it universal for Mac, Linux. At the moment, the C++ code uses dependencies that are only available in Windows.
+
 ## License
 
 You can use this code in any conditions.
