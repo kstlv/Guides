@@ -12,6 +12,11 @@ The reason for creating this tool: I have not found a solution to import a simpl
 4. Run the executable file of the program and follow the instructions in the console.
 5. Import the `links.html` (located in the program folder) into Pocket: https://getpocket.com/import/instapaper (make sure you are signed in to your Pocket account).
 
+```mermaid
+flowchart LR
+   links.txt -- pocket-import-helper --> links.html --> Pocket
+```
+
 ## How to Build
 
 I have implemented this task in two programming languages (C++ and C#). They work the same way. Each project is independent of the other's code.
